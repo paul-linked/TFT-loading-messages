@@ -60,7 +60,7 @@ def get_image():
                         user_agent='CLOCK')
 
     # Get the top 10 posts from the "hot" category of the day
-    subreddit = reddit.subreddit('ProgrammerHumor')
+    subreddit = reddit.subreddit('memes')
     hot_posts = subreddit.hot(limit=30)
 
     # Delete all files in the "images" folder
