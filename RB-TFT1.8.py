@@ -114,7 +114,7 @@ def display_image():
         image = image.crop((x, y, x + width, y + height))
         disp.image(image)
         # Wait for 30 seconds
-        time.sleep(30)
+        time.sleep(60)
         # Delete the image file
         os.remove(image_file)
 
@@ -161,8 +161,7 @@ while True:
         
         # Wait for some time
         time.sleep(5)
-    get_image()
-    display_image()
+    
     # Get current time
     current_date = time.strftime("%d.%m.%Y")
     current_time = time.strftime("%H:%M:%S")
