@@ -74,6 +74,7 @@ def get_image():
             image_name = str(i) + '.' + image_url.split('.')[-1]
             image_path = os.path.join(folder_path, image_name)
             urllib.request.urlretrieve(image_url, image_path)
+    display_image()
 
 
 
